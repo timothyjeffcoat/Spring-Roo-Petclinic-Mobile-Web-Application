@@ -1,0 +1,561 @@
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 3 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[618]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 618, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 4 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=618, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 16:58:00 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[619]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 619, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 5 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=618, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 16:58:00 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=619, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:59:53 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[620]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 620, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 6 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=620, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:57:31 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=618, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 16:58:00 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=619, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:59:53 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[621]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 621, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 7 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=620, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:57:31 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=621, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:52:35 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=618, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 16:58:00 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=619, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:59:53 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[622]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 622, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 8 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=620, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:57:31 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=621, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:52:35 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=618, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 16:58:00 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=619, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:59:53 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=622, lastName=lastName_7, email=email_7, address=address_7, birthDay=Mon Sep 26 17:01:18 MDT 2011, firstName=firstName_7, specialty=0, telephone=telephone_7, homePage=homePage_7, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_7}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[623]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 623, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 9 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=620, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:57:31 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=621, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:52:35 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=618, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 16:58:00 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=619, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:59:53 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=622, lastName=lastName_7, email=email_7, address=address_7, birthDay=Mon Sep 26 17:01:18 MDT 2011, firstName=firstName_7, specialty=0, telephone=telephone_7, homePage=homePage_7, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_7}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=623, lastName=lastName_8, email=email_8, address=address_8, birthDay=Mon Sep 26 16:51:30 MDT 2011, firstName=firstName_8, specialty=0, telephone=telephone_8, homePage=homePage_8, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_8}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[624]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 624, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 10 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=620, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:57:31 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=621, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:52:35 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=618, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 16:58:00 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=619, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:59:53 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=624, lastName=lastName_9, email=email_9, address=address_9, birthDay=Mon Sep 26 17:04:24 MDT 2011, firstName=firstName_9, specialty=0, telephone=telephone_9, homePage=homePage_9, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_9}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=622, lastName=lastName_7, email=email_7, address=address_7, birthDay=Mon Sep 26 17:01:18 MDT 2011, firstName=firstName_7, specialty=0, telephone=telephone_7, homePage=homePage_7, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_7}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=623, lastName=lastName_8, email=email_8, address=address_8, birthDay=Mon Sep 26 16:51:30 MDT 2011, firstName=firstName_8, specialty=0, telephone=telephone_8, homePage=homePage_8, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_8}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=616, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:52:58 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=617, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 16:53:09 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=615, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 16:53:01 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.AbstractPerson$1': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.AbstractPerson$1': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.test.context.transaction.TransactionalTestExecutionListener - No method-level @Rollback override: using default rollback [true] for test context [[TestContext@5e58a983 testClass = VetIntegrationTest, testInstance = com.springsource.petclinic.domain.VetIntegrationTest@46f5c8fb, testMethod = testFindVet@VetIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]]
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03]
+DEBUG main org.hibernate.transaction.JDBCTransaction - rollback
+DEBUG main org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
+DEBUG main org.hibernate.transaction.JDBCTransaction - rolled back JDBC Connection
+DEBUG main org.hibernate.jdbc.ConnectionManager - aggressively releasing JDBC connection
+DEBUG main org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@38128f03] after transaction
+DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+INFO main org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@5e58a983 testClass = VetIntegrationTest, testInstance = com.springsource.petclinic.domain.VetIntegrationTest@46f5c8fb, testMethod = testFindVet@VetIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]]
+DEBUG main org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test method: context [[TestContext@5e58a983 testClass = VetIntegrationTest, testInstance = com.springsource.petclinic.domain.VetIntegrationTest@46f5c8fb, testMethod = testFindVet@VetIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]], class dirties context [false], class mode [null], method dirties context [false].
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.springsource.petclinic.domain.VetIntegrationTest]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.springsource.petclinic.domain.VetIntegrationTest]
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.VetIntegrationTest': AutowiredFieldElement for private com.springsource.petclinic.domain.VetDataOnDemand com.springsource.petclinic.domain.VetIntegrationTest.dod
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'vetDataOnDemand'
+DEBUG main org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[TestContext@5e58a983 testClass = VetIntegrationTest, testInstance = com.springsource.petclinic.domain.VetIntegrationTest@58e38fae, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]].
+DEBUG main org.springframework.test.context.TestContext - Retrieved ApplicationContext for test class [class com.springsource.petclinic.domain.VetIntegrationTest] from cache with key [[MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']].
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.VetIntegrationTest': AutowiredFieldElement for private com.springsource.petclinic.domain.VetDataOnDemand com.springsource.petclinic.domain.VetIntegrationTest.dod
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'vetDataOnDemand'
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'testFindAllVets' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG main org.springframework.test.context.transaction.TransactionalTestExecutionListener - Explicit transaction definition [PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''] found for test context [[TestContext@5e58a983 testClass = VetIntegrationTest, testInstance = com.springsource.petclinic.domain.VetIntegrationTest@58e38fae, testMethod = testFindAllVets@VetIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]]
+DEBUG main org.springframework.test.context.TestContext - Retrieved ApplicationContext for test class [class com.springsource.petclinic.domain.VetIntegrationTest] from cache with key [[MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']].
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [testFindAllVets]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG main org.hibernate.impl.SessionImpl - opened session at timestamp: 13170774656
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.hibernate.transaction.JDBCTransaction - begin
+DEBUG main org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+DEBUG main org.hibernate.transaction.JDBCTransaction - current autocommit status: true
+DEBUG main org.hibernate.transaction.JDBCTransaction - disabling autocommit
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@43ece626] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@6b033450] does not support JDBC Connection retrieval
+DEBUG main org.springframework.test.context.transaction.TransactionalTestExecutionListener - No method-level @Rollback override: using default rollback [true] for test context [[TestContext@5e58a983 testClass = VetIntegrationTest, testInstance = com.springsource.petclinic.domain.VetIntegrationTest@58e38fae, testMethod = testFindAllVets@VetIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ca3f30 testClass = VetIntegrationTest, locations = '{classpath:/META-INF/spring/applicationContext.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]]
+INFO main org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (8): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@40d1e07c]; rollback [true]
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'testFindAllVets' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.AbstractPerson$1': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select vet0_.id as id1_, vet0_.address as address1_, vet0_.birth_day as birth4_1_, vet0_.city as city1_, vet0_.email as email1_, vet0_.first_name as first7_1_, vet0_.home_page as home8_1_, vet0_.last_name as last9_1_, vet0_.telephone as telephone1_, vet0_.version as version1_, vet0_.employed_since as employed12_1_, vet0_.specialty as specialty1_ from abstract_person vet0_ where vet0_.dtype='Vet' limit ?
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[625]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 625, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[626]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 626, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 2 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[627]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 627, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 3 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[628]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 628, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 4 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[629]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 629, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 5 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=629, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:53:46 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[630]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 630, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 6 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=629, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:53:46 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=630, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:52:09 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[631]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 631, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 7 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=629, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:53:46 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=630, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:52:09 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=631, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:54:29 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[632]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 632, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 8 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=629, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:53:46 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=632, lastName=lastName_7, email=email_7, address=address_7, birthDay=Mon Sep 26 16:57:28 MDT 2011, firstName=firstName_7, specialty=0, telephone=telephone_7, homePage=homePage_7, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_7}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=630, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:52:09 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=631, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:54:29 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[633]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 633, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 9 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=629, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:53:46 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=632, lastName=lastName_7, email=email_7, address=address_7, birthDay=Mon Sep 26 16:57:28 MDT 2011, firstName=firstName_7, specialty=0, telephone=telephone_7, homePage=homePage_7, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_7}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=633, lastName=lastName_8, email=email_8, address=address_8, birthDay=Mon Sep 26 16:54:38 MDT 2011, firstName=firstName_8, specialty=0, telephone=telephone_8, homePage=homePage_8, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_8}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=630, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:52:09 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=631, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:54:29 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.Vet': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - select nextval ('hibernate_sequence')
+DEBUG main org.hibernate.id.SequenceGenerator - Sequence identifier generated: BasicHolder[java.lang.Long[634]]
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - generated identifier: 634, using strategy: org.hibernate.id.SequenceGenerator
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@43ece626] for JPA transaction
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Participating in existing transaction
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 10 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=629, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:53:46 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=632, lastName=lastName_7, email=email_7, address=address_7, birthDay=Mon Sep 26 16:57:28 MDT 2011, firstName=firstName_7, specialty=0, telephone=telephone_7, homePage=homePage_7, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_7}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=633, lastName=lastName_8, email=email_8, address=address_8, birthDay=Mon Sep 26 16:54:38 MDT 2011, firstName=firstName_8, specialty=0, telephone=telephone_8, homePage=homePage_8, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_8}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=630, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:52:09 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=631, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:54:29 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=634, lastName=lastName_9, email=email_9, address=address_9, birthDay=Mon Sep 26 17:03:04 MDT 2011, firstName=firstName_9, specialty=0, telephone=telephone_9, homePage=homePage_9, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_9}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into abstract_person (address, birth_day, city, email, first_name, home_page, last_name, telephone, version, employed_since, specialty, dtype, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Vet', ?)
+DEBUG main org.hibernate.jdbc.AbstractBatcher - Executing batch size: 1
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.AbstractPerson$1': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.springsource.petclinic.domain.AbstractPerson$1': PersistenceElement for transient javax.persistence.EntityManager com.springsource.petclinic.domain.AbstractPerson.entityManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 10 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=628, lastName=lastName_3, email=email_3, address=address_3, birthDay=Mon Sep 26 17:00:53 MDT 2011, firstName=firstName_3, specialty=0, telephone=telephone_3, homePage=homePage_3, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_3}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=629, lastName=lastName_4, email=email_4, address=address_4, birthDay=Mon Sep 26 16:53:46 MDT 2011, firstName=firstName_4, specialty=0, telephone=telephone_4, homePage=homePage_4, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_4}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=626, lastName=lastName_1, email=email_1, address=address_1, birthDay=Mon Sep 26 16:53:23 MDT 2011, firstName=firstName_1, specialty=0, telephone=telephone_1, homePage=homePage_1, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_1}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=627, lastName=lastName_2, email=email_2, address=address_2, birthDay=Mon Sep 26 17:03:02 MDT 2011, firstName=firstName_2, specialty=0, telephone=telephone_2, homePage=homePage_2, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_2}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=632, lastName=lastName_7, email=email_7, address=address_7, birthDay=Mon Sep 26 16:57:28 MDT 2011, firstName=firstName_7, specialty=0, telephone=telephone_7, homePage=homePage_7, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_7}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=633, lastName=lastName_8, email=email_8, address=address_8, birthDay=Mon Sep 26 16:54:38 MDT 2011, firstName=firstName_8, specialty=0, telephone=telephone_8, homePage=homePage_8, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_8}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=625, lastName=lastName_0, email=email_0, address=address_0, birthDay=Mon Sep 26 17:00:27 MDT 2011, firstName=firstName_0, specialty=0, telephone=telephone_0, homePage=homePage_0, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_0}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=630, lastName=lastName_5, email=email_5, address=address_5, birthDay=Mon Sep 26 16:52:09 MDT 2011, firstName=firstName_5, specialty=0, telephone=telephone_5, homePage=homePage_5, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_5}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=631, lastName=lastName_6, email=email_6, address=address_6, birthDay=Mon Sep 26 16:54:29 MDT 2011, firstName=firstName_6, specialty=0, telephone=telephone_6, homePage=homePage_6, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_6}
+DEBUG main org.hibernate.pretty.Printer - com.springsource.petclinic.domain.Vet{id=634, lastName=lastName_9, email=email_9, address=address_9, birthDay=Mon Sep 26 17:03:04 MDT 2011, firstName=firstName_9, specialty=0, telephone=telephone_9, homePage=homePage_9, employedSince=Mon Sep 26 14:04:25 MDT 2011, version=0, city=city_9}
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
